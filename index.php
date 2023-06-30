@@ -10,12 +10,13 @@ stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form Page</title>
 </head>
 <body>
-    <form action="./server.php" method="get">
+<form action="./server.php" method="get">
         <input type="text" name="paragraph">
         <input type="text" name="censoredWord">
+        <button type="submit"></button>
     </form>
 </body>
 </html>
