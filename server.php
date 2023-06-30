@@ -14,15 +14,17 @@ $censoredText = str_replace($receivedWord, '***', $receivedText);
 </head>
 <body>
     <p>
-       Paragrafo:  <?php 
-   echo $receivedText;?>
-</p>
-<p>Lunghezza paragrafo: <?php echo strlen($receivedText);?></p>
+       Paragrafo:  <?php echo $receivedText;?>
+    </p>
+    <p>
+        Lunghezza paragrafo: <?php echo strlen($receivedText);?>
+    </p>
 
     <h2>
-    Censored word: <?php echo $censoredText; ?>
-   
+        Censored word: <?php echo $censoredText; ?>
     </h2> 
-    <p>Lunghezza paragrafo censurato: <?php echo strlen($censoredText);?></p>
+    <p>
+        Lunghezza paragrafo censurato: <?php echo strlen($censoredText);?>
+    </p>
 </body>
 </html>
