@@ -1,8 +1,8 @@
 <?php 
-$receivedText = $_GET('paragraph');
-$receivedWord = $_GET('censoredWord');
+$receivedText = $_GET['paragraph'];
+$receivedWord = $_GET['censoredWord'];
 
-$censor = str_ireplace($receivedWord, '***', $receivedText);
+$censoredText = str_replace($receivedWord, '***', $receivedText);
 
 ?>
 <!DOCTYPE html>
@@ -14,15 +14,15 @@ $censor = str_ireplace($receivedWord, '***', $receivedText);
 </head>
 <body>
     <p>
-        <?php 
-    echo $receivedText;
-    echo strlen($receivedText);
+       Paragrafo:  <?php 
+   echo $receivedText;?>
+</p>
+<p>Lunghezza paragrafo: <?php echo strlen($receivedText);?></p>
 
-    
-    ?></p>
-
-    <h2>Censored word: <?php 
-    echo $receivedWord;
-    ?></h2>
+    <h2>
+    Censored word: <?php echo $censoredText; ?>
+   
+    </h2> 
+    <p>Lunghezza paragrafo censurato: <?php echo strlen($censoredText);?></p>
 </body>
 </html>
