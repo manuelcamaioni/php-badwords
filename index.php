@@ -13,10 +13,10 @@ stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
     <title>Form Page</title>
 </head>
 <body>
-<form action="./server.php" method="get">
+<form action="./server.php" method="GET">
         <input type="text" name="paragraph">
         <input type="text" name="censoredWord">
-        <button type="submit"></button>
+        <button type="submit">Invia</button>
     </form>
 </body>
 </html>
